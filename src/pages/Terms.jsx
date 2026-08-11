@@ -62,7 +62,7 @@ export default function Terms() {
 
       <h2>7. Contact</h2>
       <p>
-        Questions about these terms? Email <strong>onthelistatl@gmail.com</strong>.
+        Questions about these terms? Email <strong>onthelistteam@gmail.com</strong>.
       </p>
     </LegalPage>
   )

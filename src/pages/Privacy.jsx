@@ -74,7 +74,7 @@ export default function Privacy() {
 
       <h2>8. Contact</h2>
       <p>
-        Questions about this policy? Email <strong>onthelistatl@gmail.com</strong>.
+        Questions about this policy? Email <strong>onthelistteam@gmail.com</strong>.
       </p>
     </LegalPage>
   )
