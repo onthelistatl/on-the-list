@@ -1,0 +1,70 @@
+.club-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.club-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.club-name {
+  font-size: 16px;
+  letter-spacing: -0.01em;
+}
+
+.club-sub {
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.club-details {
+  font-size: 12px;
+  color: var(--text-muted);
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  opacity: 0.6;
+}
+
+.report-btn {
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 13px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+
+.report-btn:hover {
+  background: rgba(255, 46, 136, 0.1);
+  box-shadow: 0 0 12px var(--accent-glow);
+}
+
+.report-btn:active {
+  transform: scale(0.98);
+}
+
+.report-btn:disabled {
+  border-color: var(--border);
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+
+.report-btn:disabled:hover {
+  background: transparent;
+  box-shadow: none;
+}

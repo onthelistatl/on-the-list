@@ -1,0 +1,50 @@
+:root {
+  --bg: #0e0817;
+  --card-bg: #1a1128;
+  --border: #2b2142;
+  --text: #f4f0fb;
+  --text-muted: #8e82ac;
+  --accent: #ff2e88;
+  --accent-glow: rgba(255, 46, 136, 0.45);
+  --free: #4ade80;
+
+  --font-display: 'Archivo Black', 'Archivo', sans-serif;
+  --font-body: 'Archivo', sans-serif;
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}

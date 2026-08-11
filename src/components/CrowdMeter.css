@@ -1,0 +1,67 @@
+.crowd-meter-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.crowd-meter {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 28px;
+  padding: 2px;
+}
+
+.crowd-bar {
+  width: 5px;
+  border-radius: 2px;
+  background: var(--border);
+  transform-origin: bottom;
+}
+
+.crowd-bar.active {
+  background: var(--accent);
+  box-shadow: 0 0 6px var(--accent-glow);
+}
+
+.crowd-meter.is-stale .crowd-bar.active {
+  background: var(--text-muted);
+  box-shadow: none;
+  opacity: 0.6;
+}
+
+.crowd-bar.pulsing {
+  animation: eq-pulse 0.9s ease-in-out infinite alternate;
+}
+
+@keyframes eq-pulse {
+  from {
+    transform: scaleY(0.65);
+    opacity: 0.75;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+.crowd-meta {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.crowd-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.crowd-label.is-stale {
+  color: var(--text-muted);
+}
+
+.crowd-timestamp {
+  font-size: 11px;
+  color: var(--text-muted);
+}
